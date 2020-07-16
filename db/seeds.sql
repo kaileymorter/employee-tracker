@@ -1,19 +1,23 @@
-INSERT INTO departments (name)
-VALUES
-('Marketing'),
-('Human Resources'),
-('Operations'),
-('Sales'),
-('Finance');
+USE EmployeeTracker_db;
 
-INSERT INTO roles (title, salary, department_id)
-VALUES
-('Manager', 75, 1),
-('Employee', 50, 2),
-('Director', 80, 3);
+INSERT INTO department (name)
+VALUES ("Sales"), ("Marketing"), ("Finance"),('Human Resources');
 
-INSERT INTO employees (first_name, last_name, role_id, manager_id)
+INSERT INTO role (title, salary, department_id)
 VALUES
-('Kailey', 'Morter', 1, 1),
-('Chelsie', 'Guardado', 2, 2),
-('John', 'Smith', 3, 3);
+("VP Sales", 100000, 1),
+("Salesperson", 80000, 1),
+("Marketing Director", 150000, 2), 
+("Designer", 120000, 2),
+("Accountant", 125000, 3),
+('VP Human Resources', 190000, 4), 
+('Human Resource Generalist', 65000, 4);
+
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
+VALUES
+("Kailey", "Morter", 1, null), 
+("John", "Smith", 3, null),
+("Mary", "Jane", 4, 2),
+("Chris", "Hall", 6, null),
+("Kenzie", "Rollins", 2, 1),
+("Taylor", "Smith", 2, 1);
