@@ -14,6 +14,8 @@ The application gives youtthe following options:
 * Add an employee
 * Update an employee
 
+Video of application in action: https://drive.google.com/file/d/12tsd00G3U8-WB5w532MRd63JoFMfl5Rm/view
+
 ## Table of Contents:
 * [Installation](#installation)
 * [Usage](#usage)
